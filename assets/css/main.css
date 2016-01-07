@@ -1,0 +1,478 @@
+ /* ==========================================================================
+   Google Fonts
+   ========================================================================== */
+@import url(https://fonts.googleapis.com/css?family=PT+Sans+Caption);
+@import url(https://fonts.googleapis.com/css?family=Doppio+One);
+
+/* ==========================================================================
+   Base Styles and Bootstrap Modifications
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #f2c2c9;
+    color: #a4003a;
+    text-shadow: none;
+}
+
+::selection {
+    background: #16a085;
+    color: #a4003a;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+ hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+ img {
+    vertical-align: middle;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+ textarea {
+    resize: vertical;
+}
+
+
+/* ==========================================================================
+   General styles
+   ========================================================================== */
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: "Lato";
+    font-weight: 300;
+    font-size: 16px;
+    color: #555;
+
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+}
+
+.col-md-4 {
+	padding-bottom: 20px;
+}
+
+.row {
+margin-right: 0px;
+margin-left: -15px;
+}
+
+.navbar-default {
+border-color: transparent;
+background-color: #dadada;
+}
+
+
+.navbar-toggle {
+border-color: transparent;
+border: 0px solid transparent;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+	background-color: #16a085;
+	color: white;
+}
+
+
+
+hr {
+    position: relative;
+    border: none;
+}
+
+hr:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 25%;
+    width: 50%;
+    height: 2px;
+    background: #ccc;
+}
+
+a img {
+    background: white;
+}
+
+.odd a img {
+    background: #f5f5f5;
+}
+
+/* Titles */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway";
+    font-weight: 300;
+    color: #333;
+}
+
+
+/* Paragraph & Typographic */
+p {
+    line-height: 28px;
+    margin-bottom: 25px;
+}
+
+.centered {
+    text-align: center;
+}
+
+.paragraph-lead {
+    font-size: 20px;
+    color: #3498db;
+}
+
+strong {
+    font-weight: 700;
+}
+
+em {
+    font-weight: 300;
+}
+
+pre {
+    background: #ebebeb;
+    border: none;
+    font-family: "Monaco";
+    font-size: 16px;
+    color: #666;
+    padding: 20px;
+    line-height: 28px;
+}
+
+small {
+    font-size: 12px;
+}
+
+/* Images */
+.overflow-image {
+    margin-top: -65px;
+}
+
+/* Links */
+a {
+    color: #c0392b;
+    word-wrap: break-word;
+
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+a:hover,
+a:focus {
+    color: #c0392b;
+    text-decoration: none;
+    outline: 0;
+}
+
+a:before,
+a:after {
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+
+/* ==========================================================================
+   Wrap Sections
+   ========================================================================== */
+
+#headerwrap {
+	background: url('http://i.imgur.com/dk8lhTo.jpg') no-repeat center top;
+	margin-top: 60px;
+	padding-top:120px;
+	text-align:center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 755px;
+	width: 100%;
+
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#jason-asahara-header {
+	color: rgba(255, 255, 255, 1);
+	margin-top: 160px;
+	letter-spacing: 2.5px;
+    font-family: 'PT Sans Caption', sans-serif;
+	font-size: 77px;
+	font-weight: bold;
+/*	text-shadow: .5px .5px .5px #000;*/
+}
+
+#full-stack-developer-header {
+    color: #ba332e;
+    margin-top: 2.5px;
+    letter-spacing: 7.5px;
+    font-family: 'PT Sans Caption', sans-serif;
+    font-size: 41.5px;
+    font-weight: bold;
+/*    text-shadow: .5px .5px .5px #000;*/
+}
+
+#headerwrap p {
+	color:#ffffff;
+	font-size: 40px;
+	font-weight: 400;
+	text-align: center;
+	line-height: 40px;
+	letter-spacing: 3px;
+	margin-left: 15px;
+	text-shadow: 1px 1px 1px #000;
+}
+
+#greywrap {
+	background: url('http://i.imgur.com/vtg1dZx.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+	margin-top: 0px;
+	padding-top: 40px;
+	border-bottom: 1px solid #ddd;
+	text-align: center;
+}
+
+#greywrap .callout {
+	margin-bottom: 20px;
+}
+
+#greywrap p {
+	margin-left: 30px;
+	margin-right: 30px;
+	letter-spacing: 1px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+#greywrap .icon {
+	font-size: 60px;
+	line-height: 30px;
+	margin-bottom: 10px;
+}
+
+#footerwrap {
+	background: #2b2b2b;
+	margin-top: 0px;
+	padding-top: 40px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #ddd;
+	text-align: center;
+}
+
+#footerwrap h4 {
+	color: white;
+}
+
+
+/* ==========================================================================
+   Box Sections
+   ========================================================================== */
+
+.white h1 {
+	padding-top: 35px;
+}
+
+.white p {
+	padding-top: 25px;
+}
+
+/* Section Dividers */
+.section-divider {
+    z-index: 999;
+    width: 100%;
+    display: table;
+    height: 465px;
+    border-bottom: 2px solid #E6EAED;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+
+    background-position: center center;
+
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    background-attachment: relative;
+
+    text-align: center;
+}
+
+.textdivider h1 {
+/*	padding-top: 70px;*/
+	color: white;
+	font-size: 40px;
+}
+
+.textdivider p {
+	color: white;
+	font-size: 25px;
+}
+
+
+/* Section Dividers Backgrounds */
+
+.divider1 {
+	background-image: url('../img/bg/divider1.jpg')
+}
+
+.divider2 {
+	background-image: url('../img/bg/divider2.jpg')
+}
+
+.divider3 {
+	background-image: url('../img/bg/divider3.jpg');
+	margin-top: 0px;
+}
+
+.divider4 {
+	background-image: url('../img/bg/divider4.jpg')
+}
+
+.divider6 {
+	background-image: url('../img/bg/divider6.jpg')
+}
+
+.divider7 {
+    background-image: url('../img/bg/divider7.jpg');
+}
+
+/* ==========================================================================
+   MEDIA QUERIES
+   ========================================================================== */
+
+
+@media screen and (max-width:1050px), screen and (max-device-width:1050px){
+	body .header{background-attachment: scroll;}
+}
+
+
+/*ipad portrait*/
+@media only screen and (min-device-width:768px) and (max-device-width : 1024px) and (orientation : portrait){
+	.header{background-attachment: scroll;}
+}
+
+@media screen and (max-width:769px) {
+	#headerwrap h1 {
+		font-size: 40px;
+	}
+	#headerwrap p {
+		font-size: 30px;
+		line-height: 38px;
+	}
+  }
+
+.wanted-dead-or-alive {
+    margin-top: 18.5px;
+}
+
+.wanted-button {
+    margin-top: -35px;
+}
+
+.cheap-eats-of-la {
+    margin-top: 30px;
+}
+
+.cheap-eats-button {
+    margin-top: -25px;
+}
+
+.local-city {
+    margin-top: 40px;
+}
+
+.local-city-button {
+    margin-top: -25px;
+}
+
+.restful-crawl {
+    margin-top: 77.5px;
+}
+
+.restful-crawl-button {
+    margin-top: -50px;
+}
+
+.about-me {
+    margin-top: 20px;
+}
+
+.description {
+    padding-bottom: 35px;
+    line-height: 25px;
+    font-size: 16px;
+}
+
+.los-angeles-headline {
+    margin-top: -40px;
+}
+
+.footer-text {
+    font-size: 15px;
+}
+
