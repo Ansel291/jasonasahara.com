@@ -208,6 +208,29 @@ a:focus {
     outline: 0;
 }
 
+.wanted-github:hover,
+.wanted-github:focus,
+.restful-crawl-github:hover,
+.restful-crawl-github:focus {
+    color: #eea236;
+    text-decoration: none;
+    outline: 0;
+}
+
+.cheap-eats-github:hover,
+.cheap-eats-github:focus {
+    color: #46b8da;
+    text-decoration: none;
+    outline: 0;
+}
+
+.local-city-github:hover,
+.local-city-github:focus {
+    color: #d43f3a;
+    text-decoration: none;
+    outline: 0;
+}
+
 a:before,
 a:after {
     -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
